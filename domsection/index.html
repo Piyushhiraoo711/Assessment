@@ -6,41 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        h1{
+        h1 {
             font-size: larger;
             font-family: Arial, Helvetica, sans-serif;
-        }
-        #input{
-            border-radius: 10%;
         }
     </style>
 </head>
 
 <body>
-
-
     <div>
         <h1>Press Button to add string</h1>
+
     </div>
-    <input id="input" name="input" placeholder="Enter String"  type="text" required />
-    <div class="add">
-        <ul class="add-li">items: </ul>
+    <br>
+    <div>
+        <input id="input" name="input" placeholder="Enter String" type="text" required />
+        <button id="click">Add</button>
     </div>
 
-    <button id="click">Add</button>
+    <div>
+        <h1>items:</h1>
+        <ul id="add-li"></ul>
+    </div>
+
+
 
 </body>
 <script>
-    const text = document.getElementById('input')
-    const btn = document.querySelector("#click")
-    const addString = document.querySelector(".add")
-    const addLi = document.querySelector('.add-li')
+    const text = document.getElementById('input');
+    const btn = document.querySelector("#click");
+    // const addOriginalList = document.querySelector(".add");
+    const addList = document.querySelector('#add-li');
+    const listArray = []
+
+    // forEach
+    // function showList() {
+    //     addList.innerHTML = '';
+    //     listArray.forEach((element)=> {
+    //         addList.appendChild(element)
+    //     })
+    // }
+
+    // map
+    function showList() {
+        addList.innerHTML = '';
+        listArray.map((element) => {
+            addList.appendChild(element)
+        })
+    }
+
+    function addItems() {
+        const newItem = document.createElement("li")
+        newItem.textContent = text.value;
+        listArray.push(newItem)
+        text.value = ''
+        showList()
+    }
+
     btn.addEventListener('click', () => {
-        const li = document.createElement('li')
-        li.textContent = text.value
-        addLi.append(li);
-        
+        if (text.value === '') alert("add items in list")
+        else {
+            addItems()
+        }
     })
+
 </script>
 
 </html>
+
