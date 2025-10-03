@@ -22,7 +22,8 @@ Promise.resolve().then(() => {
   setTimeout(() => {
     console.log("Timeout");
     fetcData();
+    console.log("End");
   }, 0);
 });
 
-console.log("End");
+
