@@ -1,0 +1,83 @@
+
+## 🟡 Section A – MCQs & Conceptual Questions (30 Marks → 15 × 2 marks)  
+**Time:** 25 minutes
+
+1. Which of the following is **not** a valid JavaScript data type?  
+   a) String b) Number c) Character d) Boolean
+   explain -> option c, "Character" is not a valid JavaScript data type 
+
+2. What will the following code log?
+```js
+let x = 10;
+x += "5";
+console.log(typeof x); 
+```
+a) number b) string c) undefined d) object
+explain -> option b , string
+
+3. What is the difference between `let` and `const`? (1 line)
+explain  -> a variable declear with let can be reassign but in const can not chnage the constant value
+
+4. Which operator is used for **spread syntax** in JavaScript?  
+a) `...` b) `??` c) `=>` d) `**`
+explain -> option a, `...` is used to spread the syntex in javascript
+
+5. What will this code output?
+```js
+console.log([1, 2, 3].map(n => n * 2));
+```
+a) `[2, 4, 6]` b) `2,4,6` c) `undefined` d) `null`
+explain -> option a, [2, 4, 6] will be console in window
+
+6. Which of the following is true about arrow functions?  
+a) They have their own `this`  
+b) They cannot be anonymous  
+c) They don’t have their own `this`  
+d) They must always return explicitly
+explain -> option c 
+
+7. Identify the DOM method used to select elements by class name:  
+a) `querySelector('#className')`  
+b) `getElementById('className')`  
+c) `querySelector('.className')`  
+d) `getElementsByTagName('className')`
+expain -> option c
+
+8. What is the output?
+```js
+console.log(typeof null);
+```
+a) "null" b) "object" c) "undefined" d) "string"
+expain -> optiob b, "{}"
+
+9. Which string method removes whitespace from both ends?  
+a) `slice()` b) `trim()` c) `split()` d) `substring()`
+expain - > option b , trim()
+
+10. What does `event.preventDefault()` do?
+expalin -> event.preventDefault() hold the behaviour of html from and to prevent the form submission
+
+11. Which method can be used to **iterate over arrays** without creating a new array?  
+a) map b) filter c) forEach d) reduce
+explain -> option c , forEach()
+
+12. What will be the output?
+```js
+const arr = [1,2,3];
+const newArr = [...arr, 4];
+console.log(newArr);
+```
+a) `[1,2,3,4]` b) `[4,1,2,3]` c) `[1,[2,3],4]` d) error
+explain -> option a, [1, 2, 3, 4]
+
+13. What is the difference between **synchronous** and **asynchronous** code in JS? (1-2 lines)
+explain -> In synchronous the code excution does step by step means next task has to wait for the previous task to complete its excution
+          but in asynchronous code the next task do not wait for the current task to complete its excution
+
+14. Which of the following executes first in the event loop?  
+a) setTimeout callback b) Promise `.then()` c) fetch response d) DOMContentLoaded
+expalin -> d , DOMContentLoaded
+
+15. What is the **purpose of destructuring** in JavaScript? (1 line)
+expalin -> the purpose of destructuring in javascript to break the multiline object to single value 
+---
