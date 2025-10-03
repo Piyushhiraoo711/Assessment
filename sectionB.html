@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn {
+            color: black;
+            border-radius: 10%;
+        }
+        .msg {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
+        }
+        body{
+            display: inline;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <p class="msg">Please select me!</p>
+        <button id="btn">change me!</button>
+    </div>
+
+
+</body>
+<script>
+    const btn = document.querySelector("#btn");
+    const para = document.querySelector(".msg")
+    btn.addEventListener('click', () => {
+        para.textContent = 'Button Clicked!'
+    })
+</script>
+
+</html>
+<!-- 
+
+DOM Manipulation:
+Write code to select a button with ID #btn and a paragraph with class .msg. When the button is clicked, change the paragraph text to “Button Clicked!” -->
